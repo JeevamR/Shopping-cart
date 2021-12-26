@@ -72,7 +72,7 @@ export default function Basket() {
     cartList.filter((type, index) => cartList.indexOf(type) === index);
 
   return (
-    <aside className="block col-1">
+    <aside className="block">
       <h2> Cart Items </h2>
       {selectedProducts &&
         filter_lists().map(

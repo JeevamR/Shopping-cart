@@ -51,9 +51,9 @@ const ProductListing = () => {
   return (
     <div className="ui grid container">
       {Object.keys(cartItems).map((item) => (
-        <div className="movie-card" key={cartItems[item].id}>
+        <div className="product-card" key={cartItems[item].id}>
           <img
-            className="movie-cover"
+            className="product-cover"
             src={cartItems[item].image}
             width="280px"
             alt=""
@@ -63,6 +63,7 @@ const ProductListing = () => {
               event.onerror = null;
             }}
           />
+          <p className="product-title"> {cartItems[item].title} </p>
           <button
             key={cartItems[item].id}
             className="button"
