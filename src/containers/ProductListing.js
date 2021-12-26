@@ -1,6 +1,9 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 import {
   setProduct,
   incrementCount,
@@ -52,7 +55,7 @@ const ProductListing = () => {
     <div className="ui grid container">
       {Object.keys(cartItems).map((item) => (
         <div className="product-card" key={cartItems[item].id}>
-          <img
+          <LazyLoadImage
             className="product-cover"
             src={cartItems[item].image}
             width="280px"
