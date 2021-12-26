@@ -1,0 +1,111 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0.5rem;
+}
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.2rem;
+}
+h3 {
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.row.center {
+  align-items: center;
+}
+.col-1 {
+  flex: 1;
+}
+.col-2 {
+  flex: 2;
+}
+.block {
+  background-color: #e0e0e0;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+.text-right {
+  text-align: right;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col1 {
+  flex: 1;
+}
+.col2 {
+  flex: 2;
+}
+
+.block-class {
+  background-color: grey;
+  padding: 1rem;
+  margin: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.row.center {
+  align-items: center;
+}
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 280px;
+  box-shadow: 0 3px 10px 0 #aaa;
+  cursor: pointer;
+}
+
+.container {
+  /* background-color: black; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+  justify-content: space-evenly;
+}
+
+.movie-cover {
+  object-fit: cover;
+  height: 362px;
+}
+
+.movie-title {
+  font-size: 18px;
+  font-weight: 50px;
+  margin: 15px 0;
+  color: black;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  outline: none;
+  border: 1px solid white;
+  padding: 4px;
+  cursor: pointer;
+}
