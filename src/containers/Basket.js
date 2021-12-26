@@ -78,7 +78,7 @@ export default function Basket() {
         filter_lists().map(
           (item) =>
             item.count !== 0 && (
-              <div>
+              <div key={item.id}>
                 <p> Name: {item.title} </p>
                 <h4> Qty: {item.count} </h4>
                 <button
